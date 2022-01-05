@@ -14,10 +14,23 @@
         bottom: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.3);
+        animation: menuShow linear 0.1s ;
     }
 
     .menu-mobile.show {
         display: block;
+    }
+
+    @keyframes menuShow {
+        from{
+            opacity: 0.2;
+            margin-left: -20px;
+        }
+
+        to{
+            opacity: 1;
+            margin-left: 0px;
+        }
     }
 
     #nav {
