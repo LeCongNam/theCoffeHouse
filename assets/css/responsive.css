@@ -1,4 +1,4 @@
-@media screen and (max-width:576px) {
+@media screen and (max-width: 479px) {
     #menu {
         position: fixed;
         top: 0;
@@ -57,11 +57,22 @@
         display: block;
     }
 
-    footer#ft{
-        display: block;
-        width: 100vw;
-        clear: both;
-        /* overflow: hidden; */
-        margin-right: 50px;
+   
+
+
+    .store-coffe {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 36px;
+        margin-right: auto; 
+    }
+
+    html {
+        margin-right: -40px;
+    }
+
+
+    footer {
+
     }
 }
