@@ -77,4 +77,27 @@
         margin-right: auto;
         margin-left: auto;
     } */
+    .footer_facebook {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .w-100 {
+        display: block;
+    }
+
+    ul#nav {
+        display: none;
+    }
+
+    .footer_facebook {
+        
+        margin-bottom: 10px;
+    }
 }
