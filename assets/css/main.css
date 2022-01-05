@@ -1,18 +1,4 @@
-body,
-html {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-.row-full{
-    width: 100vw;
-    position: relative;
-    margin-left: -50vw;
-    height: 100px;
-    margin-top: 100px;
-    left: 50%;
-}
 
 .row {
   display: flex;
