@@ -8,10 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="//theme.hstatic.net/1000075078/1000803849/14/favicon.png?v=433" type="image/png">
 
+    <!-- Link CDN Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
@@ -60,16 +65,22 @@
     </div>
 
     <div id="menu">
+        <div class="btn-menu-mobile">
+            <i class="fas fa-bars btn-menu-icon"></i>
+        </div>
         <img src="./assets/image/logo.png" alt="" class="logo">
-        <ul id="nav">
-            <li><a href="#">Cà phê</a></li>
-            <li><a href="#">Trà</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Chuyện Cà phê và Trà</a></li>
-            <li><a href="#">Cửa Hàng</a></li>
-            <li><a href="#">Tuyển dụng</a></li>
-            <li><a href="#">Đăng nhập</a></li>
-        </ul>
+        <div class="menu-mobile">
+            <ul id="nav">
+                <i class="fas fa-times close-icon"></i>
+                <li><a href="#">Cà phê</a></li>
+                <li><a href="#">Trà</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Chuyện Cà phê và Trà</a></li>
+                <li><a href="#">Cửa Hàng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+            </ul>
+        </div>
     </div>
 
     <div id="banner">
@@ -78,20 +89,21 @@
 
     <div class="container">
         <div class="row mt-5">
-            <div class="col-lg-6">
+            <div class="col col-lg-6 col-sm-12 mb-sm-5">
                 <img src="./assets/image/products/sale1.jpeg" alt="" class="sale">
             </div>
-            <div class="col-lg-6">
+            <div class="w-100"></div>
+            <div class="col col-lg-6 col-sm-12 mt-sm-4">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="cart">
+                    <div class="col col-lg-6">
+                        <div class="cart cart-first">
                             <img src="./assets/image/products/tra-dao1.jpg" alt="" class="cart__img">
                             <p class="cart__name">Trà Đào Cam Sả Đá</p>
                             <p class="cart__price">45.000 đ</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="cart">
+                    <div class="col col-lg-6">
+                        <div class="cart cart-first">
                             <img src="./assets/image/products/tra-dao2.jpg" alt="" class="cart__img">
                             <p class="cart__name">Trà Đào Cam Sả Đá</p>
                             <p class="cart__price">45.000 đ</p>
@@ -103,29 +115,30 @@
     </div>
 
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-3">
+        <div class="row mt-lg-5 mt-sm-1">
+            <div class="col col-lg-3 col-sm-6 col-md-6">
                 <div class="cart">
                     <img src="./assets/image/products/hat-sen1.jpg" alt="" class="cart__img">
                     <p class="cart__name">Trà Đào Cam Sả Đá</p>
                     <p class="cart__price">45.000 đ</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col col-lg-3 col-sm-6 col-md-6">
                 <div class="cart">
                     <img src="./assets/image/products/hat-sen2.jpg" alt="" class="cart__img">
                     <p class="cart__name">Trà Đào Cam Sả Đá</p>
                     <p class="cart__price">45.000 đ</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="w-100"></div>
+            <div class="col col-lg-3 col-sm-6 col-md-6">
                 <div class="cart">
                     <img src="./assets/image/products/hongdao.jpg" alt="" class="cart__img">
                     <p class="cart__name">Trà Đào Cam Sả Đá</p>
                     <p class="cart__price">45.000 đ</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col col-lg-3 col-sm-6 col-md-6">
                 <div class="cart">
                     <img src="./assets/image/products/tran-chau1.jpg" alt="" class="cart__img">
                     <p class="cart__name">Trà Đào Cam Sả Đá</p>
@@ -139,7 +152,7 @@
     <div class="combo">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 mt-lg-5 mt-sm-1">
                     <div class="combo__left">
                         <h2 class="combo__left--heading">Combo Quà Tết 2022</h2>
                         <p class="combo__left--desc">
@@ -148,8 +161,8 @@
                             cà phê Robusta Đắk Lắk,
                             vùng trồng cà phê nổi tiếng nhất Việt Nam. Bằng cách áp dụng kỹ thuật rang xay hiện đại.
                         </p>
+                        <a href="#" class="btn-large m-sm-auto">Tìm hiểu thêm</a>
                     </div>
-                    <a href="#" class="btn-large">Tìm hiểu thêm</a>
                 </div>
                 <div class="col-lg-8">
                     <img src="./assets/image/combo/combo1.png" alt="" class="combo__img">
@@ -204,11 +217,11 @@
     </div>
 
 
-    <footer>
+    <footer id="ft">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <ul>
+                    <ul class="footer-list">
                         <li><a href="#">
                                 <h5>Giới thiệu</h5>
                             </a></li>
@@ -221,21 +234,28 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <ul>
+                    <ul class="footer-list">
                         <li><a href="#">Điều khoản</a></li>
                         <li><a href="#">Điều khoản sử dụng</a></li>
                         <li><a href="#">Quy tắc bảo mật</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <ul>
-                        <li><a href="">Đặt hàng: 1800 6936</a></li>
-                        <li><a href="">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="">Đặt hàng: 1800 6936</a>
+                        </li>
+                        <li>
+                            <a href="">
                                 Liên hệ
-                            </a></li>
-                        <li><a href="">Tầng 3-4 Hub Building
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Tầng 3-4 Hub Building
                                 195/10E Điện Biên Phủ, P.15 ,
-                                Q.Bình Thạnh, TP.Hồ Chí Minh</a></li>
+                                Q.Bình Thạnh, TP.Hồ Chí Minh
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
@@ -244,17 +264,21 @@
             </div>
         </div>
     </footer>
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+   
+    <script src="./assets/javascript/main.js"></script>
 </body>
 
 </html>
