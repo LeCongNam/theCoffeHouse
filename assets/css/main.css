@@ -251,3 +251,21 @@ footer li a{
     text-decoration: none;
     color: #fff;
 }
+
+.btn-menu-icon,
+.btn-menu-mobile {
+    display: none;
+}
+
+.close-icon{
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.close-icon {
+    display: none;
+}

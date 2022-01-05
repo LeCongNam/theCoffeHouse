@@ -51,13 +51,10 @@
         display: block;
     }
 
-    .close-icon{
-        color: #000;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 20px;
-        padding: 5px 10px;
+    .close-icon,
+    .btn-menu-icon,
+    .btn-menu-mobile {
+        display: block;
     }
 
     footer#ft{
